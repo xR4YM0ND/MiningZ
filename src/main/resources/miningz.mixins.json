@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "net.miningz.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "net.miningz.mixin.MiningzMixinPlugin",
+  "mixins": [
+    "ItemMixin"
+  ],
+  "client": [
+    "client.MiningToolItemMixin",
+    "client.TooltipUtilMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

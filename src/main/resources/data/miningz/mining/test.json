@@ -1,0 +1,22 @@
+{
+  "1": {
+    "replace": false,
+    "items": [
+      "minecraft:stone_pickaxe"
+    ],
+    "blocks": [
+      "minecraft:stone",
+      "minecraft:sandstone"
+    ]
+  },
+  "2": {
+    "replace": false,
+    "items": [
+      "minecraft:diamond_pickaxe"
+    ],
+    "blocks": [
+      "minecraft:coal_ore",
+      "minecraft:redstone_ore"
+    ]
+  }
+}

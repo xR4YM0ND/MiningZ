@@ -1,0 +1,8 @@
+{
+  "item.miningz.harvest_level": "Harvest Lv. %s",
+
+  "config.waila.plugin_miningz": "MiningZ",
+  "config.waila.plugin_miningz.harvestable_info": "Harvestable Info",
+  "config.waila.plugin_miningz.harvestable_level_info": "Harvestable Level Info",
+  "config.jade.plugin_miningz.harvestable_info": "Harvestable Info"
+}

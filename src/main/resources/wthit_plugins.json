@@ -1,0 +1,6 @@
+{
+  "miningz:plugin": {
+    "initializer": "net.miningz.waila.MiningWTHITPlugin",
+    "side": "client"
+  }
+}
