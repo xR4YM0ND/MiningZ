@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 12,
+  "experience": 0.08,
+  "ingredient": {
+    "item": "miningz:raw_copper_nugget"
+  },
+  "result": "miningz:copper_nugget"
+}

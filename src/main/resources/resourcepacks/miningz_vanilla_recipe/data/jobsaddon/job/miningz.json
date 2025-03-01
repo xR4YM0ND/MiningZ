@@ -1,0 +1,27 @@
+{
+    "restriction": {
+    "replace": false,
+    "recipes": [
+      "miningz:coal_from_coal_piece",
+      "miningz:coal_piece",
+      "miningz:copper_ingot_from_nuggets",
+      "miningz:copper_nugget",
+      "miningz:diamond_from_diamond_piece",
+      "miningz:diamond_piece",
+      "miningz:emerald_from_emerald_piece",
+      "miningz:emerald_piece",
+      "miningz:lapis_lazuli_from_lapis_lazuli_piece",
+      "miningz:lapis_lazuli_piece",
+      "miningz:netherite_scrap_from_netherite_scrap_piece",
+      "miningz:netherite_scrap_piece",
+      "miningz:quartz_from_quartz_piece",
+      "miningz:quartz_piece",
+      "miningz:raw_copper_from_raw_copper_nuggets",
+      "miningz:raw_copper_nuggets",
+      "miningz:raw_gold_from_raw_gold_nuggets",
+      "miningz:raw_gold_nuggets",
+      "miningz:raw_iron_from_raw_iron_nuggets",
+      "miningz:raw_iron_nuggets"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 12,
+  "experience": 0.11,
+  "ingredient": {
+    "item": "miningz:raw_gold_nugget"
+  },
+  "result": "minecraft:gold_nugget"
+}
