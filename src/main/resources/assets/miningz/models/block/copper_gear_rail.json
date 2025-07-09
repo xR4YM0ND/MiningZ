@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/rail_flat",
+    "textures": {
+      "rail": "miningz:block/copper_gear_rail"
+    }
+  }
