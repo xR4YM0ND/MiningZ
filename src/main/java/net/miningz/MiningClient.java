@@ -4,6 +4,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.util.Identifier;
+import net.miningz.init.RenderInit;
 import net.miningz.network.MiningClientPacket;
 
 @Environment(EnvType.CLIENT)
@@ -14,5 +15,6 @@ public class MiningClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         MiningClientPacket.init();
+        RenderInit.init();
     }
 }

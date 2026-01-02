@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "miningz:item/prospector_picks/iron_prospector_pick"
+        "layer0": "miningz:item/iron_prospector_pick"
     }
 }

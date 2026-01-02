@@ -25,6 +25,9 @@
 		],
 		"jade": [
 			"net.miningz.waila.MiningJadePlugin"
+		],
+		"modmenu": [
+			"net.miningz.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [

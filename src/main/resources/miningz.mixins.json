@@ -4,9 +4,11 @@
   "compatibilityLevel": "JAVA_21",
   "plugin": "net.miningz.mixin.MiningzMixinPlugin",
   "mixins": [
-    "ItemMixin"
+    "ItemMixin",
+    "NoiseChunkGeneratorMixin"
   ],
   "client": [
+    "client.ClientPlayerEntityMixin",
     "client.MiningToolItemMixin",
     "client.TooltipUtilMixin"
   ],

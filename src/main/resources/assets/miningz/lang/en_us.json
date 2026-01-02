@@ -4,5 +4,21 @@
   "config.waila.plugin_miningz": "MiningZ",
   "config.waila.plugin_miningz.harvestable_info": "Harvestable Info",
   "config.waila.plugin_miningz.harvestable_level_info": "Harvestable Level Info",
-  "config.jade.plugin_miningz.harvestable_info": "Harvestable Info"
+  "config.jade.plugin_miningz.harvestable_info": "Harvestable Info",
+
+  "item.miningz.item_group": "MiningZ",
+  "item.miningz.wooden_prospector_pick": "Wooden Prospector Pick",
+  "item.miningz.stone_prospector_pick": "Stone Prospector Pick",
+  "item.miningz.copper_prospector_pick": "Copper Prospector Pick",
+  "item.miningz.golden_prospector_pick": "Golden Prospector Pick",
+  "item.miningz.iron_prospector_pick": "Iron Prospector Pick",
+  "item.miningz.steel_prospector_pick": "Steel Prospector Pick",
+  "item.miningz.diamond_prospector_pick": "Diamond Prospector Pick",
+  "item.miningz.netherite_prospector_pick": "Netherite Prospector Pick",
+
+  "text.autoconfig.miningz.title": "MiningZ Config",
+  "text.autoconfig.miningz.option.prospectorX": "Prospector X",
+  "text.autoconfig.miningz.option.prospectorY": "Prospector Y",
+
+  "tag.block.miningz.prospector_blocks": "Prospector Blocks"
 }

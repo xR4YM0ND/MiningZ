@@ -2,8 +2,7 @@ package net.miningz;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
-import net.miningz.init.EventInit;
-import net.miningz.init.LoaderInit;
+import net.miningz.init.*;
 import net.miningz.network.MiningServerPacket;
 
 import java.util.HashMap;
@@ -16,6 +15,10 @@ public class MiningMain implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ConfigInit.init();
+        RuleInit.init();
+        ItemInit.init();
+        TagInit.init();
         LoaderInit.init();
         EventInit.init();
         MiningServerPacket.init();
