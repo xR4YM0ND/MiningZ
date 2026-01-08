@@ -1,11 +1,9 @@
 package net.miningz.mixin;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.miningz.util.MiningHelper;
@@ -19,16 +17,6 @@ public class ItemMixin {
 
     @Inject(method = "postMine", at = @At("HEAD"), cancellable = true)
     private void postMineMixin(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner, CallbackInfoReturnable<Boolean> info) {
-        // TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEST
-//        if (!world.isClient() && stack.isOf(Items.WOODEN_PICKAXE)) {
-//            for (int i = 0; i < 120; i++) {
-//                for (int u = -3; u <= 3; u++)
-//                    for (int z = -3; z <= 3; z++)
-//                        world.setBlockState(pos.add(u, -i, z), Blocks.AIR.getDefaultState());
-//            }
-//        }
-        // TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEST END
-
         if (!world.isClient() && !MiningHelper.hasRequiredItemLevel(stack, state)) {
             info.setReturnValue(false);
         }
