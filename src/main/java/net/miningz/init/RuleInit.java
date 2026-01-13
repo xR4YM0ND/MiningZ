@@ -21,7 +21,6 @@ public class RuleInit {
     private static final boolean isMeadowLoaded = FabricLoader.getInstance().isModLoaded("meadow");
     private static final boolean isNaturesSpiritLoaded = FabricLoader.getInstance().isModLoaded("natures_spirit");
     private static final boolean isAlpineWhispersLoaded = FabricLoader.getInstance().isModLoaded("alpinewhispers");
-    private static final boolean isBloomingnatureLoaded = FabricLoader.getInstance().isModLoaded("bloomingnature");
     private static final boolean isHearthAndTimberLoaded = FabricLoader.getInstance().isModLoaded("hearth_and_timber");
     private static final boolean isLarionLoaded = FabricLoader.getInstance().isModLoaded("larion");
 
@@ -33,24 +32,24 @@ public class RuleInit {
 
         MaterialRules.MaterialCondition highNoise = MaterialRules.noiseThreshold(NoiseParametersKeys.CALCITE, 0.2, 0.4);
 
-        if (isMeadowLoaded && isNaturesSpiritLoaded && isAlpineWhispersLoaded && isBloomingnatureLoaded && isHearthAndTimberLoaded && isLarionLoaded) {
+        if (isMeadowLoaded && isNaturesSpiritLoaded && isAlpineWhispersLoaded  && isHearthAndTimberLoaded && isLarionLoaded) {
 
             MaterialRules.MaterialCondition lowNoise = MaterialRules.noiseThreshold(NoiseParametersKeys.CALCITE, 0.15, 0.3);
 
             MaterialRules.MaterialRule sequence = MaterialRules.sequence(
 
                     MaterialRules.condition(
-                            MaterialRules.aboveY(YOffset.fixed(39), 1),
+                            MaterialRules.aboveY(YOffset.fixed(48), 1),
                             MaterialRules.condition(
-                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(47), 1)),
+                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(56), 1)),
                                     ANDESITE
                             )
                     ),
 
                     MaterialRules.condition(
-                            MaterialRules.aboveY(YOffset.fixed(29), 1),
+                            MaterialRules.aboveY(YOffset.fixed(39), 1),
                             MaterialRules.condition(
-                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(39), 1)),
+                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(48), 1)),
                                     MaterialRules.sequence(
                                             MaterialRules.condition(highNoise, CALCITE),
                                             DIORITE
@@ -58,67 +57,56 @@ public class RuleInit {
                             )
                     ),
 
-                    // meadow
                     MaterialRules.condition(
-                            MaterialRules.aboveY(YOffset.fixed(12), 1),
+                            MaterialRules.aboveY(YOffset.fixed(29), 1),
                             MaterialRules.condition(
-                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(29), 1)),
+                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(39), 1)),
                                     MaterialRules.block(Registries.BLOCK.get(Identifier.of("meadow", "limestone")).getDefaultState())
                             )
                     ),
 
                     MaterialRules.condition(
-                            MaterialRules.aboveY(YOffset.fixed(-8), 1),
+                            MaterialRules.aboveY(YOffset.fixed(6), 1),
                             MaterialRules.condition(
-                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(12), 1)),
+                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(29), 1)),
                                     MaterialRules.sequence(
                                             MaterialRules.condition(lowNoise, MaterialRules.block(Registries.BLOCK.get(Identifier.of("natures_spirit", "travertine")).getDefaultState())),
-                                            MaterialRules.condition(lowNoise, MaterialRules.block(Registries.BLOCK.get(Identifier.of("bloomingnature", "marlstone")).getDefaultState())),
                                             MaterialRules.block(Registries.BLOCK.get(Identifier.of("alpinewhispers", "alpine_gneiss")).getDefaultState())
                                     )
                             )
                     ),
 
                     MaterialRules.condition(
+                            MaterialRules.aboveY(YOffset.fixed(-2), 1),
+                            MaterialRules.condition(
+                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(6), 1)),
+                                    GRANITE
+                            )
+                    ),
+
+                    MaterialRules.condition(
                             MaterialRules.aboveY(YOffset.fixed(-23), 1),
                             MaterialRules.condition(
-                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(-8), 1)),
+                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(-2), 1)),
+                                    TUFF
+                            )
+                    ),
+
+                    MaterialRules.condition(
+                            MaterialRules.aboveY(YOffset.fixed(-40), 1),
+                            MaterialRules.condition(
+                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(-23), 1)),
                                     MaterialRules.sequence(
-                                            MaterialRules.condition(highNoise, MaterialRules.block(Registries.BLOCK.get(Identifier.of("bloomingnature", "laterit")).getDefaultState())),
-                                            GRANITE
+                                        MaterialRules.condition(lowNoise, SMOOTH_BASALT),
+                                        MaterialRules.block(Registries.BLOCK.get(Identifier.of("hearth_and_timber", "groutless_rubblestone")).getDefaultState())
                                     )
                             )
                     ),
 
                     MaterialRules.condition(
-                            MaterialRules.aboveY(YOffset.fixed(-54), 1),
-                            MaterialRules.condition(
-                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(-23), 1)),
-                                    MaterialRules.block(Registries.BLOCK.get(Identifier.of("bloomingnature", "travertin")).getDefaultState())
-                            )
-                    ),
-
-                    MaterialRules.condition(
-                            MaterialRules.aboveY(YOffset.fixed(-75), 1),
+                            MaterialRules.aboveY(YOffset.fixed(-63), 1),
                             MaterialRules.condition(
                                     MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(-54), 1)),
-                                    TUFF
-                            )
-                    ),
-
-                    // heartandtimber
-                    MaterialRules.condition(
-                            MaterialRules.aboveY(YOffset.fixed(-91), 1),
-                            MaterialRules.condition(
-                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(-75), 1)),
-                                    MaterialRules.block(Registries.BLOCK.get(Identifier.of("hearth_and_timber", "groutless_rubblestone")).getDefaultState())
-                            )
-                    ),
-
-                    MaterialRules.condition(
-                            MaterialRules.aboveY(YOffset.fixed(-127), 1),
-                            MaterialRules.condition(
-                                    MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(-115), 1)),
                                     BLACKSTONE
                             )
                     )

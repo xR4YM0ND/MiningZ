@@ -40,6 +40,10 @@
 		"fabricloader": ">=${loader_version}",
 		"cloth-config2": ">=${cloth_config_version}"
 	},
+	"recommends": {
+        "natures_spirit": "*",
+        "terrablender": "*"
+    },
 	"suggests": {
 		"another-mod": "*"
 	}
