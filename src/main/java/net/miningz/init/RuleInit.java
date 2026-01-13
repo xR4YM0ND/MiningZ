@@ -97,7 +97,7 @@ public class RuleInit {
                             MaterialRules.condition(
                                     MaterialRules.not(MaterialRules.aboveY(YOffset.fixed(-23), 1)),
                                     MaterialRules.sequence(
-                                        MaterialRules.condition(lowNoise, SMOOTH_BASALT),
+                                        MaterialRules.condition(highNoise, SMOOTH_BASALT),
                                         MaterialRules.block(Registries.BLOCK.get(Identifier.of("hearth_and_timber", "groutless_rubblestone")).getDefaultState())
                                     )
                             )
