@@ -22,7 +22,6 @@ public class RuleInit {
     private static final boolean isNaturesSpiritLoaded = FabricLoader.getInstance().isModLoaded("natures_spirit");
     private static final boolean isAlpineWhispersLoaded = FabricLoader.getInstance().isModLoaded("alpinewhispers");
     private static final boolean isHearthAndTimberLoaded = FabricLoader.getInstance().isModLoaded("hearth_and_timber");
-    private static final boolean isLarionLoaded = FabricLoader.getInstance().isModLoaded("larion");
 
     public static void init() {
 
@@ -32,7 +31,7 @@ public class RuleInit {
 
         MaterialRules.MaterialCondition highNoise = MaterialRules.noiseThreshold(NoiseParametersKeys.CALCITE, 0.2, 0.4);
 
-        if (isMeadowLoaded && isNaturesSpiritLoaded && isAlpineWhispersLoaded  && isHearthAndTimberLoaded && isLarionLoaded) {
+        if (isMeadowLoaded && isNaturesSpiritLoaded && isAlpineWhispersLoaded  && isHearthAndTimberLoaded) {
 
             MaterialRules.MaterialCondition lowNoise = MaterialRules.noiseThreshold(NoiseParametersKeys.CALCITE, 0.15, 0.3);
 
