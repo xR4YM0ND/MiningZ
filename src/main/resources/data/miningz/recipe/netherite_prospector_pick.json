@@ -1,21 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "X": {
-      "item": "minecraft:netherite_ingot"
-    }
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
   },
-  "pattern": [
-    "XXX",
-    "X#X",
-    " # "
-  ],
+  "base": {
+    "item": "miningz:diamond_prospector_pick"
+  },
   "result": {
     "count": 1,
     "id": "miningz:netherite_prospector_pick"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
   }
 }

@@ -17,8 +17,8 @@
   "item.miningz.netherite_prospector_pick": "Netherite Prospector Pick",
 
   "text.autoconfig.miningz.title": "MiningZ Config",
-  "text.autoconfig.miningz.option.prospectorX": "Prospector X",
-  "text.autoconfig.miningz.option.prospectorY": "Prospector Y",
+  "text.autoconfig.miningz.option.prospectorX": "Prospector text position X axis",
+  "text.autoconfig.miningz.option.prospectorY": "Prospector text position Y axis",
 
   "tag.block.miningz.prospector_blocks": "Prospector Blocks"
 }

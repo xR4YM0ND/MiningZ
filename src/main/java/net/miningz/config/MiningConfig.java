@@ -4,7 +4,7 @@ import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-@Config(name = "adventurez")
+@Config(name = "miningz")
 @Config.Gui.Background("minecraft:textures/block/stone.png")
 public class MiningConfig implements ConfigData {
 

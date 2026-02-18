@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "cookingtime": 12,
-  "experience": 0.08,
-  "ingredient": {
-    "item": "miningz:raw_iron_nugget"
-  },
-  "result": "minecraft:iron_nugget"
-}

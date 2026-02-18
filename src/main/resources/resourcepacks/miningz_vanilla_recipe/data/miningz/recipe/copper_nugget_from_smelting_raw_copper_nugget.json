@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "cookingtime": 24,
-  "experience": 0.08,
-  "ingredient": {
-    "item": "miningz:raw_copper_nugget"
-  },
-  "result": "miningz:copper_nugget"
-}

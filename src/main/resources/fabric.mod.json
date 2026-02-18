@@ -3,7 +3,7 @@
 	"id": "miningz",
 	"version": "${version}",
 	"name": "MiningZ",
-	"description": "This mod is about harvest levels",
+	"description": "Designed to gently bring back the Harvest Level mechanic for blocks. It also adds Prospector Picks, which are really handy for finding resources without making a big mess of the terrain.",
 	"authors": [
 		"Globox_Z",
 		"xR4YM0ND"
@@ -18,7 +18,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "net.miningz.MiningMain"
+			"net.miningz.MiningMain"
 		],
 		"client": [
 			"net.miningz.MiningClient"
@@ -41,9 +41,9 @@
 		"cloth-config2": ">=${cloth_config_version}"
 	},
 	"recommends": {
-        "natures_spirit": "*",
-        "terrablender": "*"
-    },
+		"natures_spirit": "*",
+		"terrablender": "*"
+	},
 	"suggests": {
 		"another-mod": "*"
 	}
