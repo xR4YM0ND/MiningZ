@@ -20,12 +20,12 @@ public class ItemInit {
 
     // public static final Item WOODEN_PROSPECTOR_PICK = register("wooden_prospector_pick", new ProspectorPick(3, new Item.Settings().maxDamage(59)), MININGZ_ITEM_GROUP);
     // public static final Item STONE_PROSPECTOR_PICK = register("stone_prospector_pick", new ProspectorPick(4, new Item.Settings().maxDamage(131)), MININGZ_ITEM_GROUP);
-    public static final Item COPPER_PROSPECTOR_PICK = register("copper_prospector_pick", new ProspectorPick(5, new Item.Settings().maxDamage(190)), MININGZ_ITEM_GROUP);
-    public static final Item GOLDEN_PROSPECTOR_PICK = register("golden_prospector_pick", new ProspectorPick(6, new Item.Settings().maxDamage(32)), MININGZ_ITEM_GROUP);
-    public static final Item IRON_PROSPECTOR_PICK = register("iron_prospector_pick", new ProspectorPick(7, new Item.Settings().maxDamage(250)), MININGZ_ITEM_GROUP);
+    public static final Item COPPER_PROSPECTOR_PICK = register("copper_prospector_pick", new ProspectorPick(10, new Item.Settings().maxDamage(190)), MININGZ_ITEM_GROUP);
+    public static final Item GOLDEN_PROSPECTOR_PICK = register("golden_prospector_pick", new ProspectorPick(15, new Item.Settings().maxDamage(32)), MININGZ_ITEM_GROUP);
+    public static final Item IRON_PROSPECTOR_PICK = register("iron_prospector_pick", new ProspectorPick(20, new Item.Settings().maxDamage(250)), MININGZ_ITEM_GROUP);
     // public static final Item STEEL_PROSPECTOR_PICK = register("steel_prospector_pick", new ProspectorPick(8, new Item.Settings().maxDamage(641)), MININGZ_ITEM_GROUP);
-    public static final Item DIAMOND_PROSPECTOR_PICK = register("diamond_prospector_pick", new ProspectorPick(9, new Item.Settings().maxDamage(1561)), MININGZ_ITEM_GROUP);
-    public static final Item NETHERITE_PROSPECTOR_PICK = register("netherite_prospector_pick", new ProspectorPick(10, new Item.Settings().maxDamage(2031)), MININGZ_ITEM_GROUP);
+    public static final Item DIAMOND_PROSPECTOR_PICK = register("diamond_prospector_pick", new ProspectorPick(25, new Item.Settings().maxDamage(1561)), MININGZ_ITEM_GROUP);
+    public static final Item NETHERITE_PROSPECTOR_PICK = register("netherite_prospector_pick", new ProspectorPick(30, new Item.Settings().maxDamage(2031)), MININGZ_ITEM_GROUP);
 
     private static Item register(String id, Item item, RegistryKey<ItemGroup> itemGroup) {
         return register(MiningMain.identifierOf(id), item, itemGroup);
