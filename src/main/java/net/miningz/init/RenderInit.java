@@ -2,12 +2,17 @@ package net.miningz.init;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.miningz.access.ClientPlayerEntityAccess;
+import net.miningz.util.MiningHelper;
 
 import java.util.List;
 
@@ -25,6 +30,15 @@ public class RenderInit {
                     int y = context.getScaledWindowHeight() - 16 - 18 * i - 8 + ConfigInit.CONFIG.prospectorY;
                     context.drawItem(item.getDefaultStack(), x, y);
                     context.drawText(client.textRenderer, item.getName(), x - 4 - client.textRenderer.getWidth(item.getName()), y + 3, 0xFFFFFF, false);
+                }
+            }
+        });
+
+        ItemTooltipCallback.EVENT.register((stack, context, type, lines) -> {
+            if (stack.getItem() instanceof BlockItem blockItem) {
+                int blockLevel = MiningHelper.getBlockLevel(blockItem.getBlock());
+                if (blockLevel >= 0) {
+                    lines.add(Text.translatable("item.miningz.harvest_level", blockLevel).formatted(Formatting.GRAY));
                 }
             }
         });
