@@ -1,6 +1,7 @@
 package net.miningz.mixin;
 
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.util.math.VerticalSurfaceType;
 import net.minecraft.world.gen.chunk.ChunkGeneratorSettings;
 import net.minecraft.world.gen.chunk.NoiseChunkGenerator;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
@@ -24,7 +25,12 @@ public class NoiseChunkGeneratorMixin {
     private MaterialRules.MaterialRule buildSurfaceMixin(MaterialRules.MaterialRule materialRule) {
         if (this.settings.matchesKey(ChunkGeneratorSettings.OVERWORLD)) {
             MaterialRules.MaterialRule customRules = RuleInit.createMiningRules();
-            return MaterialRules.sequence(customRules, materialRule);
+
+            MaterialRules.MaterialRule guarded = MaterialRules.sequence(
+                    MaterialRules.condition(MaterialRules.water(0, 0), customRules),
+                    MaterialRules.condition(MaterialRules.not(MaterialRules.stoneDepth(0, true, 0, VerticalSurfaceType.FLOOR)), customRules));
+
+            return MaterialRules.sequence(guarded, materialRule);
         }
         return materialRule;
     }
