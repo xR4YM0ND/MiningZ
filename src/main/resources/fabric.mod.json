@@ -44,7 +44,10 @@
 		"natures_spirit": "*",
 		"terrablender": "*"
 	},
-	"suggests": {
-		"another-mod": "*"
+	"custom": {
+		"mc-publish": {
+			"modrinth": "qINN3dIm",
+			"curseforge": 1465533
+		}
 	}
 }
