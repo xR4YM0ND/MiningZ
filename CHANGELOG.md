@@ -1,2 +1,2 @@
 ### Fixed:
-- server crash `// changed client import to player entity`
+- sync harvest levels upon join `// thx to @MikeEBJ`
